@@ -1,0 +1,7 @@
+{
+  "nav": { "about": "Giới thiệu", "services": "Dịch vụ", "news": "Tin tức", "donate": "Quyên góp" },
+  "hero": { "slide1": { "title": "Tình yêu không biên giới", "subtitle": "Chăm sóc bệnh nhân HIV/AIDS và người di cư.", "cta": "Xem thêm" }, "slide2": { "title": "Giúp trẻ em lớn khôn", "subtitle": "Cho trẻ một mái ấm và hy vọng.", "cta": "Xem thêm" } },
+  "mission": { "label": "SỨ MỆNH", "title": "Giúp đỡ những người yếu thế", "readMore": "Xem tiếp" },
+  "donation": { "title": "Mỗi đóng góp là sức mạnh", "titleAccent": "cho gia đình ấm áp", "online": "Quyên góp ngay" },
+  "footer": { "copy": "&copy; 2024 Quỹ Harmony Home Đài Loan" }
+}

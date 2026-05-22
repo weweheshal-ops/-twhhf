@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "about": "Sobre nós",
+    "services": "Serviços",
+    "news": "Notícias",
+    "donate": "Doar"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Amor sem fronteiras",
+      "subtitle": "Cuidando de pessoas com VIH/SIDA e migrantes vulneráveis.",
+      "cta": "Saiba mais"
+    },
+    "slide2": {
+      "title": "Ajudando as crianças",
+      "subtitle": "Dando-lhes um lar e esperança para o futuro.",
+      "cta": "Saiba mais"
+    }
+  },
+  "mission": {
+    "label": "NOSSA MISSÃO",
+    "title": "Ajudando os mais vulneráveis",
+    "card1": { "title": "Cuidados VIH", "desc": "Apoio vital e empoderamento para os afetados." },
+    "card2": { "title": "Migrantes e Crianças", "desc": "Cuidado para mulheres migrantes e seus filhos." },
+    "card3": { "title": "Harmony Home", "desc": "Promovendo a interação e combatendo o estigma." },
+    "readMore": "Ler mais"
+  },
+  "stats": { "placement": "Acolhidos", "locations": "Locais", "volunteer": "Voluntariado", "years": "Anos" },
+  "news": { "label": "ÚLTIMAS NOTÍCIAS", "title": "Notícias e Relatórios", "more": "Ver mais", "cat_latest": "Eventos", "cat_service": "Serviço", "cat_report": "Relatórios" },
+  "volunteer": { "label": "PARTICIPE", "title": "Junte-se a nós por amor", "desc": "A sua força ajuda através de doações ou voluntariado.", "point1": "Voluntariado: Acompanhe crianças e idosos", "point2": "Doações: Fraldas, leite, bens essenciais", "cta": "Como participar" },
+  "donation": { "title": "Cada doação é uma força", "titleAccent": "para um lar acolhedor", "desc": "O seu apoio vai para cuidados médicos e nutrição.", "online": "Doar online", "regular": "Doação mensal" },
+  "modal": { "title": "Doação de Amor", "subtitle": "Escolha o método de doação", "method1": { "title": "Cartão de crédito", "desc": "Único ou recorrente" }, "method2": { "title": "Transferência", "desc": "Informe-nos após transferir" }, "method3": { "title": "Pagamento móvel", "desc": "Rápido e prático" }, "footer": "Emitimos recibos fiscais para doações." },
+  "footer": { "brandDesc": "Ms. Yang Jie-yu iniciou os cuidados em 1986.", "about": { "title": "Sobre", "link1": "Introdução", "link2": "Fundador", "link3": "Relatórios" }, "services": { "title": "Serviços", "link1": "Adultos", "link2": "Crianças", "link3": "Migrantes" }, "contact": { "title": "Contacto" }, "copy": "&copy; 2024 Fundação Harmony Home Taiwan. Todos os direitos reservados." }
+}

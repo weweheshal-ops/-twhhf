@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "about": "À propos",
+    "services": "Services",
+    "news": "Actualités",
+    "donate": "Faire un don"
+  },
+  "hero": {
+    "slide1": {
+      "title": "L'amour sans frontières",
+      "subtitle": "Servir les personnes atteintes du VIH/SIDA et les travailleurs migrants vulnérables.",
+      "cta": "En savoir plus"
+    },
+    "slide2": {
+      "title": "Aider les enfants à grandir",
+      "subtitle": "Donner aux enfants un foyer et un espoir pour l'avenir.",
+      "cta": "En savoir plus"
+    }
+  },
+  "mission": {
+    "label": "NOTRE MISSION",
+    "title": "Tendre la main aux plus vulnérables de la société",
+    "card1": { "title": "Soins VIH/SIDA", "desc": "Soutien vital de base et conseils de développement pour les personnes touchées." },
+    "card2": { "title": "Migrants et Enfants", "desc": "Soins pour les femmes migrantes vulnérables et leurs enfants." },
+    "card3": { "title": "Harmony Home", "desc": "Promouvoir l'interaction communautaire et éliminer la stigmatisation." },
+    "readMore": "Lire la suite"
+  },
+  "stats": { "placement": "Placements", "locations": "Lieux", "volunteer": "Bénévolat", "years": "Années" },
+  "news": { "label": "DERNIÈRES NOUVELLES", "title": "Actualités et rapports", "more": "Voir plus", "cat_latest": "Événements", "cat_service": "Récits", "cat_report": "Rapports" },
+  "volunteer": { "label": "S'ENGAGER", "title": "Rejoignez-nous par amour", "desc": "Votre force peut apporter un changement grâce au bénévolat ou aux dons.", "point1": "Bénévolat : Accompagner les enfants", "point2": "Dons : Couches, lait, produits quotidiens", "cta": "Comment participer" },
+  "donation": { "title": "Chaque don est une force,", "titleAccent": "pour une famille chaleureuse", "desc": "Votre soutien sert directement aux soins médicaux et à l'aide alimentaire.", "online": "Don en ligne", "regular": "Don régulier" },
+  "modal": { "title": "Don d'amour", "subtitle": "Choisissez votre mode de don", "method1": { "title": "Carte de crédit", "desc": "Dons uniques ou réguliers" }, "method2": { "title": "Virement bancaire", "desc": "Contactez-nous après le virement" }, "method3": { "title": "Paiement mobile", "desc": "Simple et rapide" }, "footer": "Un reçu fiscal peut être délivré pour chaque don." },
+  "footer": { "brandDesc": "Ms. Yang Jie-yu a commencé les soins en 1986, un engagement par-delà les frontières.", "about": { "title": "À propos", "link1": "Introduction", "link2": "Le Fondateur", "link3": "Rapports annuels" }, "services": { "title": "Services", "link1": "Soins adultes", "link2": "Soins enfants", "link3": "Aide migrants" }, "contact": { "title": "Contact" }, "copy": "&copy; 2024 Fondation Harmony Home Taiwan. Tous droits réservés." }
+}

@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "about": "About Us",
+    "services": "Services",
+    "news": "Latest News",
+    "donate": "Donate"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Love Knows No Borders or Status",
+      "subtitle": "Serving HIV/AIDS patients, vulnerable migrant workers, and their children, providing a warm haven.",
+      "cta": "Learn More"
+    },
+    "slide2": {
+      "title": "Helping Children Grow Up Safely",
+      "subtitle": "Giving children a home, a shoulder to lean on, and a hope for the future.",
+      "cta": "Learn More"
+    }
+  },
+  "mission": {
+    "label": "OUR MISSION",
+    "title": "Reaching out to the most vulnerable in society",
+    "card1": {
+      "title": "HIV/AIDS Care",
+      "desc": "Providing basic life support, holistic development guidance, and empowerment programs for those affected by HIV/AIDS."
+    },
+    "card2": {
+      "title": "Migrants & Children",
+      "desc": "Caring for vulnerable migrant women and their children, providing a safe environment for childbirth and early childhood."
+    },
+    "card3": {
+      "title": "Harmony Home",
+      "desc": "Promoting friendly community interaction, eliminating disease stigma, and allowing everyone to live with dignity."
+    },
+    "readMore": "Read Full"
+  },
+  "stats": {
+    "placement": "Placements",
+    "locations": "Locations",
+    "volunteer": "Volunteer Hours",
+    "years": "Service Years"
+  },
+  "news": {
+    "label": "LATEST NEWS",
+    "title": "Latest News & Reports",
+    "more": "View More News",
+    "cat_latest": "Events",
+    "cat_service": "Service Records",
+    "cat_report": "Reports"
+  },
+  "volunteer": {
+    "label": "GET INVOLVED",
+    "title": "Join Us, Become the Power of Love",
+    "desc": "Whether through volunteering, donating supplies, or corporate partnership, every bit of your strength can bring change to those in need.",
+    "point1": "Volunteering: Join our elder/child care",
+    "point2": "Donating: Diapers, milk powder, daily needs",
+    "cta": "How to Participate"
+  },
+  "donation": {
+    "title": "Every bit of your donation,",
+    "titleAccent": "is the power of a warm family",
+    "desc": "Your support will be directly used to provide placement, medical care, nutrition support, and holistic family care services.",
+    "online": "Donate Online Now",
+    "regular": "Monthly Recurring"
+  },
+  "modal": {
+    "title": "Donate Now",
+    "subtitle": "Please choose your donation method",
+    "method1": {
+      "title": "Credit Card Online",
+      "desc": "Support one-time and recurring"
+    },
+    "method2": {
+      "title": "Bank Transfer / Postal",
+      "desc": "Please provide receipt details after transfer"
+    },
+    "method3": {
+      "title": "Mobile Pay (LINE Pay / JKO)",
+      "desc": "Fast and convenient donation choice"
+    },
+    "footer": "According to law, every donation can be issued a receipt for income tax deduction. For inquiries, please call +1 (742) 371-9123."
+  },
+  "footer": {
+    "brandDesc": "Founder Ms. Yang Jie-yu started caring services in 1986, a commitment across ethnic groups and illnesses.",
+    "about": {
+      "title": "About Us",
+      "link1": "Introduction",
+      "link2": "Founder's Message",
+      "link3": "Annual Reports"
+    },
+    "services": {
+      "title": "Our Services",
+      "link1": "Adult Care",
+      "link2": "Child Care",
+      "link3": "Migrant Support"
+    },
+    "contact": {
+      "title": "Contact Us"
+    },
+    "copy": "&copy; 2024 Taiwan Harmony Home Foundation. All Rights Reserved."
+  }
+}

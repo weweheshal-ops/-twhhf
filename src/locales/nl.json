@@ -1,0 +1,7 @@
+{
+  "nav": { "about": "Over ons", "services": "Diensten", "news": "Nieuws", "donate": "Doneren" },
+  "hero": { "slide1": { "title": "Liefde kent geen grenzen", "subtitle": "Zorg voor mensen met HIV/AIDS en migranten.", "cta": "Lees meer" }, "slide2": { "title": "Kinderen helpen", "subtitle": "Kinderen een thuis en hoop geven.", "cta": "Lees meer" } },
+  "mission": { "label": "ONZE MISSIE", "title": "De kwetsbaren helpen", "readMore": "Lees meer" },
+  "donation": { "title": "Uw donatue is kracht", "titleAccent": "voor een warm gezin", "online": "Doneer nu" },
+  "footer": { "copy": "&copy; 2024 Taiwan Harmony Home Foundation" }
+}

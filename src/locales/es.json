@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "about": "Nosotros",
+    "services": "Servicios",
+    "news": "Noticias",
+    "donate": "Donar"
+  },
+  "hero": {
+    "slide1": {
+      "title": "El amor no conoce fronteras",
+      "subtitle": "Servimos a personas con VIH/SIDA y trabajadores migrantes vulnerables.",
+      "cta": "Saber más"
+    },
+    "slide2": {
+      "title": "Ayudando a niños a crecer",
+      "subtitle": "Dando a los niños un hogar y esperanza para el futuro.",
+      "cta": "Saber más"
+    }
+  },
+  "mission": {
+    "label": "NUESTRA MISIÓN",
+    "title": "Llegando a los más vulnerables de la sociedad",
+    "card1": { "title": "Cuidado VIH/SIDA", "desc": "Apoyo vital básico y programas de empoderamiento para los afectados." },
+    "card2": { "title": "Migrantes y Niños", "desc": "Cuidado para mujeres migrantes vulnerables y sus hijos." },
+    "card3": { "title": "Harmony Home", "desc": "Promoviendo la interacción comunitaria y eliminando el estigma." },
+    "readMore": "Leer más"
+  },
+  "stats": { "placement": "Colocaciones", "locations": "Sedes", "volunteer": "Voluntariado", "years": "Años" },
+  "news": { "label": "ÚLTIMAS NOTICIAS", "title": "Noticias y Reportes", "more": "Ver más", "cat_latest": "Eventos", "cat_service": "Servicio", "cat_report": "Reportes" },
+  "volunteer": { "label": "PARTICIPA", "title": "Únete a nosotros por amor", "desc": "Tu fuerza puede traer cambios a través del voluntariado o donaciones.", "point1": "Voluntariado: Acompaña a niños y ancianos", "point2": "Donaciones: Pañales, leche, víveres", "cta": "Cómo participar" },
+  "donation": { "title": "Cada donación es una fuerza", "titleAccent": "para una familia cálida", "desc": "Tu apoyo se usa directamente para atención médica y nutrición.", "online": "Donar en línea", "regular": "Donación periódica" },
+  "modal": { "title": "Donación de amor", "subtitle": "Elige tu método de donación", "method1": { "title": "Tarjeta de crédito", "desc": "Donaciones únicas o recurrentes" }, "method2": { "title": "Transferencia bancaria", "desc": "Infórmanos tras transferir" }, "method3": { "title": "Pago móvil", "desc": "Rápido y conveniente" }, "footer": "Se puede emitir un recibo oficial para deducción de impuestos." },
+  "footer": { "brandDesc": "Ms. Yang Jie-yu inició los cuidados en 1986, un compromiso sin fronteras.", "about": { "title": "Sobre nosotros", "link1": "Introducción", "link2": "Fundador", "link3": "Reportes" }, "services": { "title": "Servicios", "link1": "Adultos", "link2": "Niños", "link3": "Migrantes" }, "contact": { "title": "Contacto" }, "copy": "&copy; 2024 Fundación Harmony Home Taiwán. Todos los derechos reservados." }
+}

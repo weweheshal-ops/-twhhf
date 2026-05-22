@@ -1,0 +1,7 @@
+{
+  "nav": { "about": "Hakkımızda", "services": "Hizmetler", "news": "Son Haberler", "donate": "Bağış Yap" },
+  "hero": { "slide1": { "title": "Sevgi Sınır Tanımaz", "subtitle": "HIV/AIDS hastalarına ve göçmenlere yardım.", "cta": "Daha Fazlası" }, "slide2": { "title": "Çocuklara Yardım", "subtitle": "Çocuklara bir yuva ve gelecek umudu.", "cta": "Daha Fazlası" } },
+  "mission": { "label": "MİSYONUMUZ", "title": "Toplumun en savunmasız kesimlerine yardım", "readMore": "Devamı" },
+  "donation": { "title": "Bağışınız,", "titleAccent": "sıcak bir ailenin gücüdür", "online": "Online Bağış" },
+  "footer": { "copy": "&copy; 2024 Tayvan Harmony Home Vakfı" }
+}

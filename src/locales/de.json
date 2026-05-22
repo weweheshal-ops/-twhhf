@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "about": "Über uns",
+    "services": "Leistungen",
+    "news": "Neuigkeiten",
+    "donate": "Spenden"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Liebe kennt keine Grenzen",
+      "subtitle": "Betreuung von Menschen mit HIV/AIDS und gefährdeten Arbeitsmigranten.",
+      "cta": "Mehr erfahren"
+    },
+    "slide2": {
+      "title": "Kindern beim Aufwachsen helfen",
+      "subtitle": "Kindern ein Zuhause und Hoffnung für die Zukunft geben.",
+      "cta": "Mehr erfahren"
+    }
+  },
+  "mission": {
+    "label": "UNSERE MISSION",
+    "title": "Den Schwächsten der Gesellschaft helfen",
+    "card1": { "title": "HIV/AIDS-Betreuung", "desc": "Lebensunterstützung und empowerment für Betroffene." },
+    "card2": { "title": "Migranten & Kinder", "desc": "Betreuung für gefährdete migrierte Frauen und ihre Kinder." },
+    "card3": { "title": "Harmony Home", "desc": "Förderung des Gemeinschaftsgefühls und Abbau von Vorurteilen." },
+    "readMore": "Mehr lesen"
+  },
+  "stats": { "placement": "Aufnahmen", "locations": "Standorte", "volunteer": "Ehrenamt", "years": "Jahre" },
+  "news": { "label": "NEUIGKEITEN", "title": "Aktuelle Berichte", "more": "Mehr sehen", "cat_latest": "Events", "cat_service": "Service", "cat_report": "Berichte" },
+  "volunteer": { "label": "MITWIRKEN", "title": "Helfen Sie mit Liebe", "desc": "Ihre Hilfe kann durch Ehrenamt oder Spenden Veränderungen bewirken.", "point1": "Ehrenamt: Kinder und Senioren begleiten", "point2": "Spenden: Windeln, Milch, Bedarfsgüter", "cta": "Teilnehmen" },
+  "donation": { "title": "Jede Spende ist Kraft", "titleAccent": "für ein warmes Zuhause", "desc": "Ihre Unterstützung dient der medizinischen Versorgung.", "online": "Online spenden", "regular": "Dauernspende" },
+  "modal": { "title": "Spende der Liebe", "subtitle": "Wählen Sie Ihre Zahlungsmethode", "method1": { "title": "Kreditkarte", "desc": "Einmalig oder monatlich" }, "method2": { "title": "Überweisung", "desc": "Bitte Details nach Transfer senden" }, "method3": { "title": "Mobile Zahlung", "desc": "Schnell und bequem" }, "footer": "Spendenbescheinigungen können ausgestellt werden." },
+  "footer": { "brandDesc": "Gründerin Yang Jie-yu begann 1986 mit der Pflege.", "about": { "title": "Über uns", "link1": "Einleitung", "link2": "Nachricht der Gründerin", "link3": "Berichte" }, "services": { "title": "Services", "link1": "Erwachsene", "link2": "Kinder", "link3": "Migranten" }, "contact": { "title": "Kontakt" }, "copy": "&copy; 2024 Taiwan Harmony Home Foundation. Alle Rechte vorbehalten." }
+}

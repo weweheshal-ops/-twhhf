@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "about": "關於我們",
+    "services": "服務項目",
+    "news": "最新消息",
+    "donate": "愛心捐款"
+  },
+  "hero": {
+    "slide1": {
+      "title": "讓愛，不分國界與身分",
+      "subtitle": "服務愛滋感染者、弱勢移工及其子女，提供一個溫暖的避風港。",
+      "cta": "瞭解更多"
+    },
+    "slide2": {
+      "title": "陪伴孩子平安長大",
+      "subtitle": "給孩子一個家，一個可以依靠的肩膀，看見未來的希望。",
+      "cta": "瞭解更多"
+    }
+  },
+  "mission": {
+    "label": "OUR MISSION",
+    "title": "為社會最脆弱的一群人，伸出溫暖的手",
+    "card1": {
+      "title": "愛滋照顧",
+      "desc": "為受HIV/AIDS影響的人們提供基本生活支持、全人發展指導與賦權計畫。"
+    },
+    "card2": {
+      "title": "移工與子女",
+      "desc": "照顧弱勢移工婦女及其子女，提供產婦及兒童一個安全的生活環境。"
+    },
+    "card3": {
+      "title": "關愛之家",
+      "desc": "推動社區友善互動，消弭疾病污名感，讓每個人都能有尊嚴地生活。"
+    },
+    "readMore": "詳全文"
+  },
+  "stats": {
+    "placement": "安置人數",
+    "locations": "服務據點",
+    "volunteer": "志工服務",
+    "years": "影響年份"
+  },
+  "news": {
+    "label": "LATEST NEWS",
+    "title": "最新的消息與報導",
+    "more": "查看更多消息",
+    "cat_latest": "活動最新",
+    "cat_service": "服務紀實",
+    "cat_report": "相關報導"
+  },
+  "volunteer": {
+    "label": "GET INVOLVED",
+    "title": "加入我們，成為愛的力量",
+    "desc": "無論是志工參與、物資捐贈或是企業合作，您的每一份力量都能為受助者帶來改變。我們誠摯邀請您一起加入關愛之家的行列。",
+    "point1": "志工招募中：陪伴孩子與長者",
+    "point2": "物資募集：尿布、奶粉、日常用品",
+    "cta": "瞭解參與方式"
+  },
+  "donation": {
+    "title": "您的每一分捐款，",
+    "titleAccent": "都是溫暖家庭的力量",
+    "desc": "您的支持將直接用於提供安置、醫療照護、營養支持及全方位的家庭關懷服務。",
+    "online": "立即線上捐款",
+    "regular": "定期定額捐款"
+  },
+  "modal": {
+    "title": "愛心捐款",
+    "subtitle": "請選擇您的捐款方式",
+    "method1": {
+      "title": "信用卡線上捐款",
+      "desc": "支援單次及定期定額"
+    },
+    "method2": {
+      "title": "銀行轉帳 / 郵政劃撥",
+      "desc": "請於轉帳後告知後五碼"
+    },
+    "method3": {
+      "title": "行動支付 (LINE Pay / 街口)",
+      "desc": "快速便利的捐贈選擇"
+    },
+    "footer": "依法您所捐贈的每一筆款項均可開立正式收據，可用於申報所得稅扣抵。若有任何疑問請洽 +1 (742) 371-9123。"
+  },
+  "footer": {
+    "brandDesc": "創辦人楊婕妤女士從1986年開始投入照顧服務，這是一份跨越族群與病痛的承諾。",
+    "about": {
+      "title": "關於關愛",
+      "link1": "基金會介紹",
+      "link2": "創辦人的話",
+      "link3": "年度報告"
+    },
+    "services": {
+      "title": "服務項目",
+      "link1": "成人照顧",
+      "link2": "兒童照顧",
+      "link3": "移工服務"
+    },
+    "contact": {
+      "title": "聯絡我們"
+    },
+    "copy": "&copy; 2024 財團法人台灣關愛基金會 Harmony Home Foundation, Taiwan. All Rights Reserved."
+  }
+}

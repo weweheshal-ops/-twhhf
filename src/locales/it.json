@@ -1,0 +1,7 @@
+{
+  "nav": { "about": "Chi siamo", "services": "Servizi", "news": "Notizie", "donate": "Dona" },
+  "hero": { "slide1": { "title": "L'amore non ha confini", "subtitle": "Serviamo persone con HIV/AIDS e migranti vulnerabili.", "cta": "Scopri di più" }, "slide2": { "title": "Aiutare i bambini", "subtitle": "Dare ai bambini una casa e speranza.", "cta": "Scopri di più" } },
+  "mission": { "label": "MISSIONE", "title": "Aiutare i più vulnerabili", "readMore": "Leggi tutto" },
+  "donation": { "title": "Ogni donazione è forza", "titleAccent": "per una famiglia calda", "online": "Dona ora" },
+  "footer": { "copy": "&copy; 2024 Fondazione Harmony Home Taiwan" }
+}

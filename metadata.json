@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: 台灣關愛基金會",
+  "description": "A pixel-perfect recreation of the Taiwan Harmony Home Foundation (TWHHF) website in Traditional Chinese.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

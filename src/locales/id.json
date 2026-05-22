@@ -1,0 +1,7 @@
+{
+  "nav": { "about": "Tentang Kami", "services": "Layanan", "news": "Berita", "donate": "Donasi" },
+  "hero": { "slide1": { "title": "Kasih Tanpa Batas", "subtitle": "Melayani pasien HIV/AIDS dan migran rentan.", "cta": "Pelajari Lagi" }, "slide2": { "title": "Membantu Anak", "subtitle": "Memberi anak rumah dan harapan.", "cta": "Pelajari Lagi" } },
+  "mission": { "label": "MISI KAMI", "title": "Membantu yang paling rentan", "readMore": "Selengkapnya" },
+  "donation": { "title": "Donasi Anda,", "titleAccent": "adalah kekuatan keluarga", "online": "Donasi Sekarang" },
+  "footer": { "copy": "&copy; 2024 Yayasan Harmony Home Taiwan" }
+}

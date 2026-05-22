@@ -181,13 +181,22 @@ export default function Navbar() {
       <div className="w-full max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 flex items-center justify-between h-14 lg:h-16">
         
         {/* Logo Section - Aligned perfectly on left side */}
-        <div className="flex items-center shrink-0 max-w-[48%] sm:max-w-none flex-grow lg:flex-grow-0">
-          <Link to="/" className="flex items-center w-full">
+        <div className="flex items-center shrink-0 max-w-[54%] sm:max-w-none flex-grow lg:flex-grow-0">
+          <Link
+            to="/"
+            className="flex items-center w-full"
+            onClick={(e) => {
+              if (window.location.pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
             <img
               src="https://www.twhhf.org/sites/default/files/logo-2.png"
               alt="Harmony Home Foundation Taiwan 財團法人台灣關愛基金會"
               referrerPolicy="no-referrer"
-              className="h-11 sm:h-12 md:h-[38px] lg:h-[42px] max-w-full w-auto object-contain block transition-all duration-300"
+              className="h-[48px] sm:h-[52px] md:h-[38px] lg:h-[42px] max-w-full w-auto object-contain block transition-all duration-300"
             />
           </Link>
         </div>
@@ -342,15 +351,15 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Control Indicators */}
-        <div className="flex items-center gap-1.5 sm:gap-2.5 lg:hidden max-w-[50%] shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2.5 lg:hidden max-w-[46%] shrink-0">
           {/* Mobile "Donate Now" button styled EXACTLY like the desktop version */}
           <Link
             to="/donate"
-            className="bg-[#C00D0D] hover:bg-red-800 text-white flex items-center px-1.5 py-1 sm:px-3 sm:py-1.5 rounded-xl shadow-md shadow-red-150/50 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-95 group select-none shrink-0"
+            className="bg-[#C00D0D] hover:bg-red-800 text-white flex items-center px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-md shadow-md shadow-red-150/50 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-95 group select-none shrink-0 -ml-3 sm:-ml-4 mr-0.5 sm:mr-1"
           >
             {/* Premium Heart Mascot inside Button Container */}
-            <div className="w-5.5 h-5.5 sm:w-7 sm:h-7 mr-1 sm:mr-1.5 bg-transparent flex items-center justify-center shrink-0">
-              <svg viewBox="0 0 100 100" className="w-[22px] h-[22px] sm:w-[28px] sm:h-[28px] fill-white stroke-[#C00D0D] stroke-[1px]">
+            <div className="w-6 h-6 sm:w-7.5 sm:h-7.5 mr-1.5 sm:mr-2 bg-transparent flex items-center justify-center shrink-0">
+              <svg viewBox="0 0 100 100" className="w-[24px] h-[24px] sm:w-[30px] sm:h-[30px] fill-white stroke-[#C00D0D] stroke-[1px]">
                 {/* Dynamic outline of heart mascot */}
                 <path d="M50 82C40 73 15 48 15 32C15 18 27 10 40 10C46 10 48 13 50 15C52 13 54 10 60 10C73 10 85 18 85 32C85 48 60 73 50 82Z" />
                 {/* Cute blushing cheeks block */}
@@ -366,8 +375,8 @@ export default function Navbar() {
 
             {/* Text Container aligned properly */}
             <div className="flex flex-col text-left leading-tight pr-0.5">
-              <span className="text-[11px] sm:text-[12.5px] font-black tracking-wide">愛心捐款</span>
-              <span className="text-[8px] sm:text-[9px] font-semibold text-red-100 tracking-wider">Donate Now</span>
+              <span className="text-[12.5px] sm:text-[13px] font-black tracking-wide">愛心捐款</span>
+              <span className="text-[9px] sm:text-[9.5px] font-semibold text-red-100 tracking-wider">Donate Now</span>
             </div>
           </Link>
 

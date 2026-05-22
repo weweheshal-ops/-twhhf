@@ -70,7 +70,7 @@ export default function Home() {
       <DonationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       {/* 1. About Us Section */}
-      <section id="about-us-section" className="py-16 md:py-24 bg-white border-b border-gray-50">
+      <section id="about-us-section" className="pt-6 pb-6 md:pt-10 md:pb-12 bg-white border-b border-gray-50">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-16 select-none">
             <h2 className="text-2xl md:text-3xl font-light text-gray-900 tracking-wider">
@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* 2. Services Section */}
-      <section id="services-section" className="py-16 md:py-24 bg-[#FAF9F9]">
+      <section id="services-section" className="pt-6 pb-16 md:pt-10 md:pb-24 bg-[#FAF9F9]">
         <div className="max-w-[1140px] mx-auto px-6">
           <div className="text-center mb-16 select-none">
             <h2 className="text-2xl md:text-3xl font-light text-gray-900 tracking-wider">
@@ -360,7 +360,7 @@ export default function Home() {
           {/* Block 1: Child care regardless of nationality */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             {/* Left Texts Content */}
-            <div className="flex flex-col text-left">
+            <div className="flex flex-col text-left order-2 lg:order-1">
               <h3 className="text-2xl font-light text-[#e05a2b] mb-4">
                 {isZh ? "不分國籍的兒童照顧" : "Child care regardless of nationality"}
               </h3>
@@ -384,7 +384,7 @@ export default function Home() {
                       {isZh ? "SDG3 良好健康與福祉" : "SDG3 Health & Well-being"}
                     </h4>
                     <p className="text-gray-500 text-[12px] leading-normal mt-1">
-                      {isZh ? "確保健康生活並促進各年齡層的福祉。" : "To ensure health and promote well-being for all ages."}
+                      {isZh ? "確保健康生活並促进各年齡層的福祉。" : "To ensure health and promote well-being for all ages."}
                     </p>
                   </div>
                 </div>
@@ -411,7 +411,7 @@ export default function Home() {
             </div>
 
             {/* Right YouTube Embed (Original 30s founder clip) */}
-            <div className="w-full">
+            <div className="w-full order-1 lg:order-2">
               <div className="relative aspect-video w-full h-0 pb-[56.25%] overflow-hidden rounded shadow-sm border border-gray-150 bg-black">
                 <iframe
                   src="https://www.youtube.com/embed/I-CllVyaM60"
@@ -427,7 +427,7 @@ export default function Home() {
           {/* Block 2: Care for adults living with HIV */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             {/* Left Texts Content */}
-            <div className="flex flex-col text-left">
+            <div className="flex flex-col text-left order-2 lg:order-1">
               <h3 className="text-2xl font-light text-[#e05a2b] mb-4">
                 {isZh ? "成人愛滋感染者照顧" : "Care for adults living with HIV"}
               </h3>
@@ -476,7 +476,7 @@ export default function Home() {
             </div>
 
             {/* Right YouTube Embed */}
-            <div className="w-full">
+            <div className="w-full order-1 lg:order-2">
               <div className="relative aspect-video w-full h-0 pb-[56.25%] overflow-hidden rounded shadow-sm border border-gray-150 bg-black">
                 <iframe
                   src="https://www.youtube.com/embed/RydF-lFdc4c"

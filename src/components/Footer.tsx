@@ -42,7 +42,7 @@ export default function Footer() {
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
                   {isZh ? "聯絡電話：" : "Contact number: "}
-                  <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
+                  <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
                 </span>
@@ -51,7 +51,7 @@ export default function Footer() {
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
                   {isZh ? "傳真：" : "fax: "}
-                  <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
+                  <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
                 </span>
@@ -81,7 +81,7 @@ export default function Footer() {
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
                   {isZh ? "聯絡電話：" : "Contact number: "}
-                  <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
+                  <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
                 </span>
@@ -90,7 +90,7 @@ export default function Footer() {
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
                   {isZh ? "傳真：" : "fax: "}
-                  <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
+                  <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
                 </span>
@@ -109,7 +109,7 @@ export default function Footer() {
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
                   {isZh ? "聯絡電話：" : "Contact number: "}
-                  <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
+                  <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
                 </span>
@@ -118,7 +118,7 @@ export default function Footer() {
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
                   {isZh ? "傳真：" : "fax: "}
-                  <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
+                  <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
                 </span>
@@ -142,7 +142,7 @@ export default function Footer() {
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
                   {isZh ? "聯絡電話：" : "Contact number: "}
-                  <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
+                  <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
                 </span>

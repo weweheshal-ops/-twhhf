@@ -279,7 +279,7 @@ export default function HonestBusinessPractices() {
                     </li>
                     <li>
                       {isZh ? "檢舉電話：" : "Report hotline: "}
-                      <a href="tel:0227389600" className="text-red-600 hover:underline">
+                      <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">
                         02-27389600#12
                       </a>
                     </li>

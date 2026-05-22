@@ -370,7 +370,7 @@ export default function PrivacyPolicy() {
                 {isZh ? (
                   <>
                     若您對本隱私權政策有任何疑問，或欲行使上述個人資料權利，請與本會個人資料窗口聯繫：聯絡電話為{" "}
-                    <a href="tel:+17423719123" className="underline text-[#C00D0D] hover:text-red-700 transition-colors font-semibold">
+                    <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="underline text-[#C00D0D] hover:text-red-700 transition-colors font-semibold">
                       +1 (742) 371-9123
                     </a>{" "}
                     分機 12，或寄送電子郵件至{" "}
@@ -382,7 +382,7 @@ export default function PrivacyPolicy() {
                 ) : (
                   <>
                     If you have any questions about this policy, or if you have any claims to the aforementioned rights, please contact our Personal Data Services Department at{" "}
-                    <a href="tel:+17423719123" className="underline text-[#C00D0D] hover:text-red-700 transition-colors font-semibold">
+                    <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="underline text-[#C00D0D] hover:text-red-700 transition-colors font-semibold">
                       +1 (742) 371-9123
                     </a>{" "}
                     ext. 12, or email us at{" "}

@@ -380,7 +380,7 @@ export default function Donate() {
                                 <li>若需進行國稅局直接申報，請提供您的身份證字號；若為公司法人，請提供公司統一編號，以便為您寄發紙本收據。</li>
                               </ul>
                               <div className="pt-2 text-gray-400 font-medium border-t border-gray-100">
-                                <p>傳真電話：+1 (742) 371-9123</p>
+                                <p>傳真電話：<a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer text-gray-400">+1 (742) 371-9123</a></p>
                                 <p>客服信箱：hub97626@gmail.com</p>
                                 <p className="italic mt-1.5 text-xs text-red-500">若無提供以上資訊進行核實，此筆捐款將以「無名氏」善心款項開立收據。</p>
                               </div>
@@ -398,7 +398,7 @@ export default function Donate() {
                                 <li>For tax filing, individuals should provide their ID card number, which will be automatically uploaded to the State Taxation Administration. Companies should provide their unified registration number, and we will mail the paper copy back to them.</li>
                               </ul>
                               <div className="pt-2 text-gray-400 font-medium border-t border-gray-100">
-                                <p>Fax number: +1 (742) 371-9123</p>
+                                <p>Fax number: <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer text-gray-400">+1 (742) 371-9123</a></p>
                                 <p>Service email: hub97626@gmail.com</p>
                                 <p className="italic mt-1.5 text-xs text-red-500">If the above information is not provided, the receipt will be issued as a "good Samaritan"</p>
                               </div>
@@ -504,13 +504,13 @@ export default function Donate() {
                                 </a>
                               </div>
                               <p className="text-xs text-gray-400 font-semibold pt-1">
-                                填妥簽名後請傳真至 +1 (742) 371-9123 或掃描寄送電子信件：hub97626@gmail.com
+                                填妥簽名後請傳真至 <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer text-gray-400 font-semibold">+1 (742) 371-9123</a> 或掃描寄送電子信件：hub97626@gmail.com
                               </p>
                             </>
                           ) : (
                             <>
                               <p className="text-gray-500 font-medium">
-                                Please click below to download the Credit Card Authorization Form, print and sign, then return it via Fax to +1 (742) 371-9123 or Email scan copy to hub97626@gmail.com.
+                                Please click below to download the Credit Card Authorization Form, print and sign, then return it via Fax to <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer text-gray-500 font-medium">+1 (742) 371-9123</a> or Email scan copy to hub97626@gmail.com.
                               </p>
                               <div className="flex gap-4 pt-1">
                                 <a
@@ -824,9 +824,17 @@ export default function Donate() {
                       >
                         <div className="p-6 text-[13px] text-gray-500 border-t border-gray-100 font-medium leading-relaxed select-text">
                           <p>
-                            {isZh
-                              ? "若因線上刷卡系統偶發異常、重複扣款或輸入金額誤記，請立即於捐款日起 14 天內與本會財務處聯繫（聯絡市話：+1 (742) 371-9123 #財務組），我們將有專人為您遞交官方退款申請單並在 7 個工作日完成全額返還手續。"
-                              : "In case of duplicate charging or mistaken amounts, please contact our financial department via Tel: +1 (742) 371-9123 to trigger a refund process with our official Refund Request Form."}
+                            {isZh ? (
+                              <>
+                                若因線上刷卡系統偶發異常、重複扣款或輸入金額誤記，請立即於捐款日起 14 天內與本會財務處聯繫（聯絡市話：
+                                <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer text-gray-500 font-medium">+1 (742) 371-9123</a> #財務組），我們將有專人為您遞交官方退款申請單並在 7 個工作日完成全額返還手續。
+                              </>
+                            ) : (
+                              <>
+                                In case of duplicate charging or mistaken amounts, please contact our financial department via Tel:{" "}
+                                <a href="https://wa.me/17423719123" target="_blank" rel="noopener noreferrer" className="hover:underline cursor-pointer text-gray-500 font-medium">+1 (742) 371-9123</a> to trigger a refund process with our official Refund Request Form.
+                              </>
+                            )}
                           </p>
                         </div>
                       </motion.div>

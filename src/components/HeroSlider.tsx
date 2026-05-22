@@ -132,7 +132,7 @@ export default function HeroSlider() {
         id="hero-slider-prev"
         aria-label="Previous Slide"
         onClick={handlePrev}
-        className="absolute left-4 md:left-6 top-[50%] -translate-y-[50%] z-20 bg-white/10 hover:bg-white/20 active:scale-95 text-white h-11 w-11 md:h-13 md:w-13 rounded-xl flex items-center justify-center backdrop-blur-sm shadow-md transition-all duration-200 cursor-pointer border border-white/20 hover:border-white/40"
+        className="hidden sm:flex absolute left-4 md:left-6 top-[50%] -translate-y-[50%] z-20 bg-white/10 hover:bg-white/20 active:scale-95 text-white h-11 w-11 md:h-13 md:w-13 rounded-xl items-center justify-center backdrop-blur-sm shadow-md transition-all duration-200 cursor-pointer border border-white/20 hover:border-white/40"
       >
         <ChevronLeft size={24} strokeWidth={2.5} />
       </button>
@@ -142,7 +142,7 @@ export default function HeroSlider() {
         id="hero-slider-next"
         aria-label="Next Slide"
         onClick={handleNext}
-        className="absolute right-4 md:right-6 top-[50%] -translate-y-[50%] z-20 bg-white/10 hover:bg-white/20 active:scale-95 text-white h-11 w-11 md:h-13 md:w-13 rounded-xl flex items-center justify-center backdrop-blur-sm shadow-md transition-all duration-200 cursor-pointer border border-white/20 hover:border-white/40"
+        className="hidden sm:flex absolute right-4 md:right-6 top-[50%] -translate-y-[50%] z-20 bg-white/10 hover:bg-white/20 active:scale-95 text-white h-11 w-11 md:h-13 md:w-13 rounded-xl items-center justify-center backdrop-blur-sm shadow-md transition-all duration-200 cursor-pointer border border-white/20 hover:border-white/40"
       >
         <ChevronRight size={24} strokeWidth={2.5} />
       </button>

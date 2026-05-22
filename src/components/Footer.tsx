@@ -41,7 +41,7 @@ export default function Footer() {
               <li className="relative pl-4">
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
-                  {isZh ? "聯絡電話：" : "Contact number:"}
+                  {isZh ? "聯絡電話：" : "Contact number: "}
                   <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
@@ -50,7 +50,7 @@ export default function Footer() {
               <li className="relative pl-4">
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
-                  {isZh ? "傳真：" : "fax:"}
+                  {isZh ? "傳真：" : "fax: "}
                   <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
@@ -80,7 +80,7 @@ export default function Footer() {
               <li className="relative pl-4">
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
-                  {isZh ? "聯絡電話：" : "Contact number:"}
+                  {isZh ? "聯絡電話：" : "Contact number: "}
                   <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
@@ -89,7 +89,7 @@ export default function Footer() {
               <li className="relative pl-4">
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
-                  {isZh ? "傳真：" : "fax:"}
+                  {isZh ? "傳真：" : "fax: "}
                   <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
@@ -108,16 +108,16 @@ export default function Footer() {
               <li className="relative pl-4">
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
-                  {isZh ? "聯絡電話：" : "Contact number:"}
+                  {isZh ? "聯絡電話：" : "Contact number: "}
                   <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
-                    {isZh ? "+1 (742) 371-9123 分機 15、16" : "+1 (742) 371-9123 ext. 15, 16"}
+                    +1 (742) 371-9123
                   </a>
                 </span>
               </li>
               <li className="relative pl-4">
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
-                  {isZh ? "傳真：" : "fax:"}
+                  {isZh ? "傳真：" : "fax: "}
                   <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
                     +1 (742) 371-9123
                   </a>
@@ -141,9 +141,9 @@ export default function Footer() {
               <li className="relative pl-4">
                 <span className="absolute left-0 top-[8px] w-1.5 h-1.5 rounded-full bg-gray-400 select-none"></span>
                 <span>
-                  {isZh ? "聯絡電話：" : "Contact number:"}
+                  {isZh ? "聯絡電話：" : "Contact number: "}
                   <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
-                    {isZh ? "+1 (742) 371-9123 分機 12" : "+1 (742) 371-9123 ext. 12"}
+                    +1 (742) 371-9123
                   </a>
                 </span>
               </li>

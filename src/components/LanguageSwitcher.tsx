@@ -39,6 +39,7 @@ export default function LanguageSwitcher({ isScrolled }: { isScrolled?: boolean 
   }, []);
 
   const changeLanguage = (code: string) => {
+    localStorage.setItem("user_has_selected_lang", "true");
     i18n.changeLanguage(code);
     document.documentElement.lang = code;
     const lang = LANGUAGES.find(l => l.code === code);

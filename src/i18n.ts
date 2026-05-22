@@ -21,6 +21,12 @@ import id from './locales/id.json';
 import th from './locales/th.json';
 import vi from './locales/vi.json';
 
+if (typeof window !== 'undefined') {
+  if (!localStorage.getItem('user_has_selected_lang')) {
+    localStorage.setItem('i18nextLng', 'zh-TW');
+  }
+}
+
 const resources = {
   'zh-TW': { translation: zhTW },
   en: { translation: en },
@@ -51,7 +57,7 @@ i18n
       escapeValue: false, // react already safes from xss
     },
     detection: {
-      order: ['localStorage', 'cookie', 'navigator'],
+      order: ['localStorage', 'cookie'],
       caches: ['localStorage', 'cookie'],
     },
   });

@@ -71,26 +71,20 @@ export default function HeroSlider() {
   const slideVariants = {
     enter: (dir: number) => ({
       x: dir > 0 ? "100%" : "-100%",
-      opacity: 0,
-      scale: 1.02
+      opacity: 1
     }),
     center: {
       x: 0,
       opacity: 1,
-      scale: 1,
       transition: {
-        x: { type: "tween", ease: "easeInOut", duration: 0.8 },
-        opacity: { duration: 0.6 },
-        scale: { duration: 0.8 }
+        x: { type: "tween", ease: "easeInOut", duration: 0.8 }
       }
     },
     exit: (dir: number) => ({
       x: dir < 0 ? "100%" : "-100%",
-      opacity: 0,
-      scale: 0.98,
+      opacity: 1,
       transition: {
-        x: { type: "tween", ease: "easeInOut", duration: 0.8 },
-        opacity: { duration: 0.6 }
+        x: { type: "tween", ease: "easeInOut", duration: 0.8 }
       }
     })
   };
@@ -98,7 +92,7 @@ export default function HeroSlider() {
   return (
     <div 
       id="hero-slider-section"
-      className="relative h-[85vh] md:h-[90vh] w-full overflow-hidden bg-black select-none pointer-events-auto"
+      className="relative aspect-[3/2] sm:aspect-[16/9] md:aspect-auto md:h-[90vh] w-full overflow-hidden bg-black select-none pointer-events-auto"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -138,7 +132,7 @@ export default function HeroSlider() {
         id="hero-slider-prev"
         aria-label="Previous Slide"
         onClick={handlePrev}
-        className="absolute left-4 md:left-6 top-[50%] -translate-y-[50%] z-20 bg-white/10 hover:bg-white/20 active:scale-95 text-white h-11 w-11 md:h-13 md:w-13 rounded-full flex items-center justify-center backdrop-blur-sm shadow-md transition-all duration-200 cursor-pointer border border-white/20 hover:border-white/40"
+        className="absolute left-4 md:left-6 top-[50%] -translate-y-[50%] z-20 bg-white/10 hover:bg-white/20 active:scale-95 text-white h-11 w-11 md:h-13 md:w-13 rounded-xl flex items-center justify-center backdrop-blur-sm shadow-md transition-all duration-200 cursor-pointer border border-white/20 hover:border-white/40"
       >
         <ChevronLeft size={24} strokeWidth={2.5} />
       </button>
@@ -148,7 +142,7 @@ export default function HeroSlider() {
         id="hero-slider-next"
         aria-label="Next Slide"
         onClick={handleNext}
-        className="absolute right-4 md:right-6 top-[50%] -translate-y-[50%] z-20 bg-white/10 hover:bg-white/20 active:scale-95 text-white h-11 w-11 md:h-13 md:w-13 rounded-full flex items-center justify-center backdrop-blur-sm shadow-md transition-all duration-200 cursor-pointer border border-white/20 hover:border-white/40"
+        className="absolute right-4 md:right-6 top-[50%] -translate-y-[50%] z-20 bg-white/10 hover:bg-white/20 active:scale-95 text-white h-11 w-11 md:h-13 md:w-13 rounded-xl flex items-center justify-center backdrop-blur-sm shadow-md transition-all duration-200 cursor-pointer border border-white/20 hover:border-white/40"
       >
         <ChevronRight size={24} strokeWidth={2.5} />
       </button>

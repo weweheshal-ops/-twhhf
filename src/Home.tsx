@@ -246,11 +246,11 @@ export default function Home() {
             {/* Right List Column (3 items) */}
             <div className="flex flex-col gap-8">
               {/* Item 2: A-Jia */}
-              <div className="group select-text flex">
-                <Link to="/news/2" className="flex gap-4 md:gap-5 items-stretch cursor-pointer">
-                  <div className="w-24 sm:w-32 h-24 sm:h-28 shrink-0 overflow-hidden rounded select-none bg-gray-50 bg-white">
+              <div className="group select-text flex w-full">
+                <Link to="/news/2" className="flex flex-col md:flex-row gap-4 md:gap-5 cursor-pointer w-full">
+                  <div className="w-full h-48 sm:h-56 md:w-32 md:h-28 md:shrink-0 overflow-hidden rounded select-none bg-gray-50 bg-white">
                     <img
-                      src="https://www.twhhf.org/sites/default/files/styles/news_list/public/field_cover/%E9%98%AF%E4%BD%B3%E7%9A%84%E5%A4%A2%E9%AD%98.jpg?itok=4hVMxDjX"
+                      src="https://www.twhhf.org/sites/default/files/styles/news_list/public/field_cover/%E9%98%BF%E4%BD%B3%E7%9A%84%E5%A4%A2%E9%AD%98.jpg?itok=4hVMxDjX"
                       alt="News A-Jia"
                       className="w-full h-full object-cover"
                     />
@@ -276,11 +276,11 @@ export default function Home() {
               </div>
 
               {/* Item 3: Mother's tears */}
-              <div className="group select-text flex">
-                <Link to="/news/3" className="flex gap-4 md:gap-5 items-stretch cursor-pointer">
-                  <div className="w-24 sm:w-32 h-24 sm:h-28 shrink-0 overflow-hidden rounded select-none bg-gray-50 bg-white">
+              <div className="group select-text flex w-full">
+                <Link to="/news/3" className="flex flex-col md:flex-row gap-4 md:gap-5 cursor-pointer w-full">
+                  <div className="w-full h-48 sm:h-56 md:w-32 md:h-28 md:shrink-0 overflow-hidden rounded select-none bg-gray-50 bg-white">
                     <img
-                      src="https://www.twhhf.org/sites/default/files/styles/news_list/public/field_cover/%E9%98%AF%E4%BD%B3%E7%9A%84%E9%BE%8D%E9%B3%B3%E8%83%8E%E5%AF%B6%E5%AF%B6%E5%9C%A8%E5%8F%B0%E5%8C%97%E5%B8%82%E8%90%AC%E8%8A%B3%E9%86%AB%E9%99%A2%E9%86%AB%E7%99%82%E5%9C%98%E9%9A%8A%E7%9A%84%E7%85%A7%E9%A1%A7%E4%B8%8B%E5%B9%B3%E5%AE%89%E8%84%AB%E9%9A%AA%E3%80%82.jpg?itok=90jKwgl9"
+                      src="https://www.twhhf.org/sites/default/files/styles/news_list/public/field_cover/%E9%98%BF%E4%BD%B3%E7%9A%84%E9%BE%8D%E9%B3%B3%E8%83%8E%E5%AF%B6%E5%AF%B6%E5%9C%A8%E5%8F%B0%E5%8C%97%E5%B8%82%E8%90%AC%E8%8A%B3%E9%86%AB%E9%99%A2%E9%86%AB%E7%99%82%E5%9C%98%E9%9A%8A%E7%9A%84%E7%85%A7%E9%A1%A7%E4%B8%8B%E5%B9%B3%E5%AE%89%E8%84%AB%E9%9A%AA%E3%80%82.jpg?itok=90jKwgl9"
                       alt="News Mother tears"
                       className="w-full h-full object-cover"
                     />
@@ -308,9 +308,9 @@ export default function Home() {
               </div>
 
               {/* Item 4: Han Kuo-yu */}
-              <div className="group select-text flex">
-                <Link to="/news/4" className="flex gap-4 md:gap-5 items-stretch cursor-pointer">
-                  <div className="w-24 sm:w-32 h-24 sm:h-28 shrink-0 overflow-hidden rounded select-none bg-gray-50 bg-white">
+              <div className="group select-text flex w-full">
+                <Link to="/news/4" className="flex flex-col md:flex-row gap-4 md:gap-5 cursor-pointer w-full">
+                  <div className="w-full h-48 sm:h-56 md:w-32 md:h-28 md:shrink-0 overflow-hidden rounded select-none bg-gray-50 bg-white">
                     <img
                       src="https://www.twhhf.org/sites/default/files/styles/news_list/public/field_cover/20260420001505.jpg?itok=49Ny1Hio"
                       alt="News Han Kuo-yu"

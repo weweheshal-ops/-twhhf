@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "motion/react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Search, ChevronDown } from "lucide-react";
+import { Menu, X, Search, ChevronDown, Plus, Minus } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -173,7 +173,7 @@ export default function Navbar() {
   return (
     <nav
       id="main-navbar"
-      className={`fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-150 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 ${
         isScrolled ? "shadow-md py-0" : "shadow-sm py-0"
       }`}
       dir={i18n.dir()}
@@ -181,14 +181,26 @@ export default function Navbar() {
       <div className="w-full max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 flex items-center justify-between h-14 lg:h-16">
         
         {/* Logo Section - Aligned perfectly on left side */}
-        <div className="flex items-center shrink-0">
+        <div className="flex items-center gap-3 shrink-0">
           <Link to="/" className="flex items-center">
             <img
               src="https://www.twhhf.org/sites/default/files/logo-2.png"
               alt="Harmony Home Foundation Taiwan 財團法人台灣關愛基金會"
               referrerPolicy="no-referrer"
-              className="h-8 sm:h-9 md:h-[38px] lg:h-[42px] w-auto object-contain block transition-all duration-300"
+              className="h-10 sm:h-11 md:h-[38px] lg:h-[42px] w-auto object-contain block transition-all duration-300"
             />
+          </Link>
+          {/* Mobile "Donate Now" button directly beside the logo */}
+          <Link
+            to="/donate"
+            className="lg:hidden bg-[#C00D0D] hover:bg-red-800 text-white flex items-center h-9 px-2.5 rounded-xl shadow-sm transition-all duration-200 select-none shrink-0"
+          >
+            <div className="w-5 h-5 mr-1 bg-transparent flex items-center justify-center shrink-0">
+              <svg viewBox="0 0 100 100" className="w-4.5 h-4.5 fill-white">
+                <path d="M50 82C40 73 15 48 15 32C15 18 27 10 40 10C46 10 48 13 50 15C52 13 54 10 60 10C73 10 85 18 85 32C85 48 60 73 50 82Z" />
+              </svg>
+            </div>
+            <span className="text-[12px] font-bold tracking-wide">愛心捐款</span>
           </Link>
         </div>
 
@@ -343,7 +355,6 @@ export default function Navbar() {
 
         {/* Mobile Control Indicators */}
         <div className="flex items-center gap-2 lg:hidden">
-          <LanguageSwitcher isScrolled={true} />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="p-2 text-gray-800 hover:bg-gray-100 rounded-full transition-colors cursor-pointer select-none"
@@ -365,6 +376,12 @@ export default function Navbar() {
             className="fixed top-14 lg:top-16 left-0 right-0 bg-white border-t border-gray-100 shadow-2xl z-40 lg:hidden overflow-y-auto max-h-[calc(100vh-56px)] lg:max-h-[calc(100vh-64px)]"
           >
             <div className="flex flex-col p-5 gap-3.5">
+              {/* Language Selector row */}
+              <div className="flex items-center justify-between py-2 border-b border-gray-100 mb-1 select-none">
+                <span className="text-[14px] font-extrabold text-gray-500">語言 / Language</span>
+                <LanguageSwitcher isScrolled={true} />
+              </div>
+
               {NAV_MENU_ITEMS.map((item) => {
                 const hasSub = !item.noDropdown;
                 const isSubmenuOpen = openMobileSubmenu === item.key;
@@ -375,7 +392,11 @@ export default function Navbar() {
                       <Link
                         to={item.href}
                         onClick={() => {
-                          if (!hasSub) setIsOpen(false);
+                          if (!hasSub) {
+                            setIsOpen(false);
+                          } else {
+                            toggleMobileSubmenu(item.key);
+                          }
                         }}
                         className="text-[16px] font-extrabold text-gray-800 py-2.5 block flex-grow hover:text-[#C00D0D]"
                       >
@@ -384,14 +405,13 @@ export default function Navbar() {
                       {hasSub && (
                         <button
                           onClick={() => toggleMobileSubmenu(item.key)}
-                          className="p-2.5 bg-gray-50 hover:bg-red-50 rounded-xl transition-all cursor-pointer"
+                          className="p-2.5 bg-gray-50 hover:bg-red-50 rounded-xl transition-all cursor-pointer flex items-center justify-center"
                         >
-                          <ChevronDown
-                            size={16}
-                            className={`transition-transform duration-200 text-gray-500 ${
-                              isSubmenuOpen ? "rotate-180 text-[#C00D0D]" : ""
-                            }`}
-                          />
+                          {isSubmenuOpen ? (
+                            <Minus size={16} className="text-[#C00D0D]" />
+                          ) : (
+                            <Plus size={16} className="text-gray-500" />
+                          )}
                         </button>
                       )}
                     </div>

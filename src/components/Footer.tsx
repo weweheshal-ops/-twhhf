@@ -110,7 +110,7 @@ export default function Footer() {
                 <span>
                   {isZh ? "聯絡電話：" : "Contact number:"}
                   <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
-                    {isZh ? "+1 (742) 371-9123#15、16" : "+1 (742) 371-9123#15, 16"}
+                    {isZh ? "+1 (742) 371-9123 分機 15、16" : "+1 (742) 371-9123 ext. 15, 16"}
                   </a>
                 </span>
               </li>
@@ -143,7 +143,7 @@ export default function Footer() {
                 <span>
                   {isZh ? "聯絡電話：" : "Contact number:"}
                   <a href="tel:+17423719123" className="underline text-gray-300 hover:text-white transition-colors">
-                    +1 (742) 371-9123#12
+                    {isZh ? "+1 (742) 371-9123 分機 12" : "+1 (742) 371-9123 ext. 12"}
                   </a>
                 </span>
               </li>

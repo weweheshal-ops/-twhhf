@@ -151,8 +151,10 @@ export default function PremiumPayment() {
     }, 2000);
   };
 
-  // Predefined static amounts: 300, 500, 800, 1000, 1500, 2000
-  const amounts = [300, 500, 800, 1000, 1500, 2000];
+  // Predefined static amounts: 300, 500, 800, 1000, 1500, 2000 (regular) / 1000, 1500, 2000, 3000, 4000, 5000 (single)
+  const amounts = donationType === "single"
+    ? [1000, 1500, 2000, 3000, 4000, 5000]
+    : [300, 500, 800, 1000, 1500, 2000];
 
   const accountDetails = {
     number: "LT783130010157920228",
@@ -336,7 +338,15 @@ export default function PremiumPayment() {
                         <div className="grid grid-cols-2 gap-4">
                           <button
                             type="button"
-                            onClick={() => setDonationType("regular")}
+                            onClick={() => {
+                              if (donationType !== "regular") {
+                                setDonationType("regular");
+                                setSelectedAmount(null);
+                                setHasSelectedAmountEver(false);
+                                setIsEditingAmount(false);
+                                setCustomAmountValue("");
+                              }
+                            }}
                             className={`py-4 px-3 rounded-xl border text-sm font-bold tracking-wide transition-all shadow-sm cursor-pointer ${
                               donationType === "regular"
                                 ? "bg-[#2d4a9b] border-[#203a7d] text-white shadow-md scale-[1.01]"
@@ -347,7 +357,15 @@ export default function PremiumPayment() {
                           </button>
                           <button
                             type="button"
-                            onClick={() => setDonationType("single")}
+                            onClick={() => {
+                              if (donationType !== "single") {
+                                setDonationType("single");
+                                setSelectedAmount(null);
+                                setHasSelectedAmountEver(false);
+                                setIsEditingAmount(false);
+                                setCustomAmountValue("");
+                              }
+                            }}
                             className={`py-4 px-3 rounded-xl border text-sm font-bold tracking-wide transition-all shadow-sm cursor-pointer ${
                               donationType === "single"
                                 ? "bg-[#2d4a9b] border-[#203a7d] text-white shadow-md scale-[1.01]"

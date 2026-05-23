@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "motion/react";
 import { Download } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -82,14 +83,20 @@ export default function Donate() {
                   ? "您的捐款，能讓台灣關愛基金會更長遠穩定地提供服務，提昇服務品質與擴大服務規模，凝聚改變受助者人生力量的契機。"
                   : "Your donation will enable the Taiwan Care Foundation to provide services more stably and sustainably in the long term, improve service quality and expand service scale, and create an opportunity to change the lives of those it helps."}
               </p>
-              <div className="w-full flex justify-center md:justify-start">
+              <div className="w-full flex justify-center md:justify-start gap-4 flex-wrap">
+                <Link
+                  to="/donate/payment"
+                  className="inline-block bg-[#EE4747] hover:bg-red-700 text-white font-semibold text-[13px] tracking-wide px-7 py-3 rounded-md transition-all uppercase select-none active:scale-95 shadow-md hover:shadow-lg hover:scale-[1.02] transform duration-200"
+                >
+                  {isZh ? "一般捐款支持" : "Donations To Support (Premium)"}
+                </Link>
                 <a
                   href="https://neti.cc/vV1Xbm1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-[#EE4747] hover:bg-red-700 text-white font-semibold text-[13px] tracking-wide px-7 py-3 rounded-md transition-all uppercase select-none active:scale-95 shadow-sm"
+                  className="inline-block border border-gray-300 hover:border-gray-400 hover:bg-gray-50 text-gray-700 font-semibold text-[13px] tracking-wide px-7 py-3 rounded-md transition-all uppercase select-none active:scale-95 shadow-sm"
                 >
-                  {isZh ? "捐款支持" : "Donations To Support"}
+                  {isZh ? "其他線上管道" : "Other Online Portal"}
                 </a>
               </div>
             </div>

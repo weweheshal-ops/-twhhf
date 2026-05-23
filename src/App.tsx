@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Home from "./Home";
 import Donate from "./Donate";
+import PremiumPayment from "./PremiumPayment";
 import About from "./About";
 import FounderChronicle from "./FounderChronicle";
 import BoardOfDirectors from "./BoardOfDirectors";
@@ -32,6 +33,8 @@ export default function App() {
         <Route path="/news" element={<NewsPage />} />
         <Route path="/news/:id" element={<NewsPage />} />
         <Route path="/donate" element={<Donate />} />
+        <Route path="/donate/payment" element={<PremiumPayment />} />
+        <Route path="/donate-payment" element={<PremiumPayment />} />
         <Route path="/policy" element={<PrivacyPolicy />} />
         <Route path="/honest-business" element={<HonestBusinessPractices />} />
         <Route path="/user/login" element={<UserLogin />} />

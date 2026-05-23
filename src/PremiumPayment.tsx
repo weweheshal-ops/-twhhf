@@ -125,6 +125,23 @@ export default function PremiumPayment() {
   // Animation / Stepper State: Step 1, Step 2, Step 3
   const [currentStep, setCurrentStep] = useState<number>(1);
 
+  // Ref for keeping the card centered in the viewport during collapse/expansion
+  const paymentCardRef = React.useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (selectedAmount !== null && !isEditingAmount) {
+      const timer = setTimeout(() => {
+        if (paymentCardRef.current) {
+          paymentCardRef.current.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        }
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [selectedAmount, isEditingAmount]);
+
   // Clipboard Copier
   const copyToClipboard = (text: string, fieldKey: string) => {
     navigator.clipboard.writeText(text);
@@ -258,7 +275,7 @@ export default function PremiumPayment() {
             )}
 
             {/* RIGHT COLUMN - Interacting Donation Payment Wizard Form */}
-            <div className={hasSelectedAmountEver ? "lg:col-span-12 w-full" : "lg:col-span-7"}>
+            <div ref={paymentCardRef} className={hasSelectedAmountEver ? "lg:col-span-12 w-full" : "lg:col-span-7"}>
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col h-full">
                 
                 {/* Stepper Header Block on the right white card */}
@@ -364,7 +381,7 @@ export default function PremiumPayment() {
                                       setIsEditingAmount(false);
                                     }}
                                     className={`p-4 rounded-xl border cursor-pointer transition-all flex items-center justify-between bg-white hover:border-[#2d4a9b] h-16 ${
-                                      isSelected ? "border-[#2d4a9b] ring-1 ring-[#2d4a9b]" : "border-gray-255"
+                                      isSelected ? "border-[#2d4a9b] ring-1 ring-[#2d4a9b]" : "border-gray-200"
                                     }`}
                                   >
                                     <div className="flex items-center gap-1.5">
@@ -372,20 +389,17 @@ export default function PremiumPayment() {
                                       <span className="text-xl font-bold font-mono text-gray-900">{amount.toLocaleString()}</span>
                                     </div>
                                     <div className="flex items-center">
-                                      <button
-                                        type="button"
-                                        role="switch"
-                                        aria-checked={isSelected}
-                                        className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
-                                          isSelected ? "bg-[#2d4a9b]" : "bg-gray-200"
+                                      <div
+                                        className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-200 ${
+                                          isSelected
+                                            ? "border-[#2d4a9b] bg-blue-50 text-[#2d4a9b]"
+                                            : "border-gray-300 bg-white"
                                         }`}
                                       >
-                                        <span
-                                          className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${
-                                            isSelected ? "translate-x-5" : "translate-x-0"
-                                          }`}
-                                        />
-                                      </button>
+                                        {isSelected && (
+                                          <Check size={14} className="stroke-[#2d4a9b] stroke-[3.5px]" />
+                                        )}
+                                      </div>
                                     </div>
                                   </div>
                                 );
@@ -399,25 +413,22 @@ export default function PremiumPayment() {
                                   setIsEditingAmount(false);
                                 }}
                                 className={`p-4 rounded-xl border cursor-pointer transition-all flex items-center justify-between bg-white hover:border-[#2d4a9b] h-16 ${
-                                  selectedAmount === "custom" ? "border-[#2d4a9b] ring-1 ring-[#2d4a9b]" : "border-gray-255"
+                                  selectedAmount === "custom" ? "border-[#2d4a9b]" : "border-gray-200"
                                 }`}
                               >
                                 <span className="text-sm font-bold text-gray-700">{t.customAmount}</span>
                                 <div className="flex items-center">
-                                  <button
-                                    type="button"
-                                    role="switch"
-                                    aria-checked={selectedAmount === "custom"}
-                                    className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
-                                      selectedAmount === "custom" ? "bg-[#2d4a9b]" : "bg-gray-200"
+                                  <div
+                                    className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-200 ${
+                                      selectedAmount === "custom"
+                                        ? "border-[#2d4a9b] bg-blue-50 text-[#2d4a9b]"
+                                        : "border-gray-300 bg-white"
                                     }`}
                                   >
-                                    <span
-                                      className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${
-                                        selectedAmount === "custom" ? "translate-x-5" : "translate-x-0"
-                                      }`}
-                                    />
-                                  </button>
+                                    {selectedAmount === "custom" && (
+                                      <Check size={14} className="stroke-[#2d4a9b] stroke-[3.5px]" />
+                                    )}
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -596,26 +607,27 @@ export default function PremiumPayment() {
                       </div>
 
                       {/* Requirement 5: I Have Made This Donation custom Switch Toggle component */}
-                      <div className="flex items-center justify-between p-4 bg-gray-50 border border-gray-205 rounded-2xl select-none">
+                      <div 
+                        onClick={() => setHasMadeDonation(!hasMadeDonation)}
+                        className="flex items-center justify-between p-4 bg-gray-50 border border-gray-200 rounded-2xl select-none cursor-pointer hover:bg-gray-100/50 transition-colors"
+                      >
                         <span className="text-xs md:text-sm font-bold text-gray-700">
                           {t.hasMadeDonationLabel}
                         </span>
                         
-                        <button
-                          type="button"
-                          role="switch"
-                          aria-checked={hasMadeDonation}
-                          onClick={() => setHasMadeDonation(!hasMadeDonation)}
-                          className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
-                            hasMadeDonation ? "bg-[#10B981]" : "bg-gray-200"
-                          }`}
-                        >
-                          <span
-                            className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${
-                              hasMadeDonation ? "translate-x-5" : "translate-x-0"
+                        <div className="flex items-center">
+                          <div
+                            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all duration-200 ${
+                              hasMadeDonation
+                                ? "border-[#10B981] bg-emerald-50 text-[#10B981]"
+                                : "border-gray-300 bg-white"
                             }`}
-                          />
-                        </button>
+                          >
+                            {hasMadeDonation && (
+                              <Check size={14} className="stroke-[#10B981] stroke-[3.5px]" />
+                            )}
+                          </div>
+                        </div>
                       </div>
 
                       {/* Requirement 6: Confirm & Proceed activation flow */}

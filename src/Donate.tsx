@@ -88,16 +88,8 @@ export default function Donate() {
                   to="/donate/payment"
                   className="inline-block bg-[#EE4747] hover:bg-red-700 text-white font-semibold text-[13px] tracking-wide px-7 py-3 rounded-md transition-all uppercase select-none active:scale-95 shadow-md hover:shadow-lg hover:scale-[1.02] transform duration-200"
                 >
-                  {isZh ? "一般捐款支持" : "Donations To Support (Premium)"}
+                  {isZh ? "一般捐款支持" : "Donations To Support"}
                 </Link>
-                <a
-                  href="https://neti.cc/vV1Xbm1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block border border-gray-300 hover:border-gray-400 hover:bg-gray-50 text-gray-700 font-semibold text-[13px] tracking-wide px-7 py-3 rounded-md transition-all uppercase select-none active:scale-95 shadow-sm"
-                >
-                  {isZh ? "其他線上管道" : "Other Online Portal"}
-                </a>
               </div>
             </div>
           </div>
@@ -138,14 +130,12 @@ export default function Donate() {
               <h3 className="font-light text-gray-800 text-[14px] md:text-[15px] leading-snug">
                 {isZh ? "兒童醫療協助方案" : "Pediatric Medical Assistance Program"}
               </h3>
-              <a
-                href="https://neti.cc/OKNaXQj"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/donate/payment"
                 className="inline-block bg-[#EE4747] hover:bg-red-700 text-white font-semibold text-[13px] tracking-wide px-5 py-2.5 rounded-md transition-all uppercase select-none active:scale-95 shadow-sm"
               >
                 {isZh ? "捐款支持" : "Donations To Support"}
-              </a>
+              </Link>
             </div>
 
             {/* Card 2 */}
@@ -161,14 +151,12 @@ export default function Donate() {
               <h3 className="font-light text-gray-800 text-[14px] md:text-[15px] leading-snug">
                 {isZh ? "南港關愛家園兒童服務計畫" : "Nangang Care Home Children's Service Program"}
               </h3>
-              <a
-                href="https://neti.cc/8AbZO5w"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/donate/payment"
                 className="inline-block bg-[#EE4747] hover:bg-red-700 text-white font-semibold text-[13px] tracking-wide px-5 py-2.5 rounded-md transition-all uppercase select-none active:scale-95 shadow-sm"
               >
                 {isZh ? "捐款支持" : "Donations To Support"}
-              </a>
+              </Link>
             </div>
 
             {/* Card 3 */}
@@ -184,14 +172,12 @@ export default function Donate() {
               <h3 className="font-light text-gray-800 text-[14px] md:text-[15px] leading-snug">
                 {isZh ? "全日型兒童照顧服務" : "Full-day childcare services"}
               </h3>
-              <a
-                href="https://neti.cc/BrnNjWq"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/donate/payment"
                 className="inline-block bg-[#EE4747] hover:bg-red-700 text-white font-semibold text-[13px] tracking-wide px-5 py-2.5 rounded-md transition-all uppercase select-none active:scale-95 shadow-sm"
               >
                 {isZh ? "捐款支持" : "Donations To Support"}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -231,14 +217,12 @@ export default function Donate() {
               <h3 className="font-light text-gray-800 text-[14px] md:text-[15px] leading-snug">
                 {isZh ? "校園愛滋防治宣導" : "Campus HIV/AIDS Prevention Promotion"}
               </h3>
-              <a
-                href="https://neti.cc/AEb3pJm"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/donate/payment"
                 className="inline-block bg-[#EE4747] hover:bg-red-700 text-white font-semibold text-[13px] tracking-wide px-5 py-2.5 rounded-md transition-all uppercase select-none active:scale-95 shadow-sm"
               >
                 {isZh ? "捐款支持" : "Donations To Support"}
-              </a>
+              </Link>
             </div>
 
             {/* Card 2 */}
@@ -254,14 +238,12 @@ export default function Donate() {
               <h3 className="font-light text-gray-800 text-[14px] md:text-[15px] leading-snug">
                 {isZh ? "愛滋感染者救護計畫" : "HIV/AIDS Rescue Program"}
               </h3>
-              <a
-                href="https://neti.cc/8yZO2wY"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/donate/payment"
                 className="inline-block bg-[#EE4747] hover:bg-red-700 text-white font-semibold text-[13px] tracking-wide px-5 py-2.5 rounded-md transition-all uppercase select-none active:scale-95 shadow-sm"
               >
                 {isZh ? "捐款支持" : "Donations To Support"}
-              </a>
+              </Link>
             </div>
 
             {/* Card 3 */}
@@ -279,14 +261,12 @@ export default function Donate() {
                   ? "「友你就有家」建置與服務啟動計畫"
                   : '"Friends Make You Home" Construction and Service Launch Plan'}
               </h3>
-              <a
-                href="https://neti.cc/O1vmgRq"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/donate/payment"
                 className="inline-block bg-[#EE4747] hover:bg-red-700 text-white font-semibold text-[13px] tracking-wide px-5 py-2.5 rounded-md transition-all uppercase select-none active:scale-95 shadow-sm"
               >
                 {isZh ? "捐款支持" : "Donations To Support"}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -322,14 +302,12 @@ export default function Donate() {
             <h3 className="font-light text-gray-800 text-[14px] md:text-[15px] leading-snug">
               {isZh ? "線上海外捐助" : "Online Donation"}
             </h3>
-            <a
-              href="https://neti.cc/RnY1Elp"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/donate/payment"
               className="inline-block bg-[#EE4747] hover:bg-red-700 text-white font-semibold text-[13px] tracking-wide px-5 py-2.5 rounded-md transition-all uppercase select-none active:scale-95 shadow-sm"
             >
               {isZh ? "捐款支持" : "Donations To Support"}
-            </a>
+            </Link>
           </div>
         </div>
       </section>

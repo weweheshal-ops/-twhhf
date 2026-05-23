@@ -194,7 +194,7 @@ export default function Navbar() {
           >
             <img
               src="https://www.twhhf.org/sites/default/files/logo-2.png"
-              alt="Harmony Home Foundation Taiwan 財團法人台灣關愛基金會"
+              alt="Harmony Home Foundation Taiwan"
               referrerPolicy="no-referrer"
               className="h-[48px] sm:h-[52px] md:h-[38px] lg:h-[42px] max-w-full w-auto object-contain block transition-all duration-300"
             />
@@ -343,9 +343,8 @@ export default function Navbar() {
             </div>
 
             {/* Text Container aligned properly */}
-            <div className="flex flex-col text-left leading-tight pr-0.5">
-              <span className="text-[12.5px] font-black tracking-wide">愛心捐款</span>
-              <span className="text-[9px] font-semibold text-red-100 tracking-wider">Donate Now</span>
+            <div className="flex flex-col text-left leading-tight pr-0.5 justify-center">
+              <span className="text-[13px] font-black tracking-wider uppercase">Donate Now</span>
             </div>
           </Link>
         </div>
@@ -374,9 +373,8 @@ export default function Navbar() {
             </div>
 
             {/* Text Container aligned properly */}
-            <div className="flex flex-col text-left leading-tight pr-0.5">
-              <span className="text-[12.5px] sm:text-[13px] font-black tracking-wide">愛心捐款</span>
-              <span className="text-[9px] sm:text-[9.5px] font-semibold text-red-100 tracking-wider">Donate Now</span>
+            <div className="flex flex-col text-left leading-tight pr-0.5 justify-center">
+              <span className="text-[13px] font-black tracking-wider uppercase">Donate Now</span>
             </div>
           </Link>
 
@@ -403,7 +401,7 @@ export default function Navbar() {
             <div className="flex flex-col p-5 gap-3.5">
               {/* Language Selector row */}
               <div className="flex items-center justify-between py-2 border-b border-gray-100 mb-1 select-none">
-                <span className="text-[14px] font-extrabold text-gray-500">語言 / Language</span>
+                <span className="text-[14px] font-extrabold text-gray-500">Language</span>
                 <LanguageSwitcher isScrolled={true} />
               </div>
 
@@ -504,7 +502,7 @@ export default function Navbar() {
                   <svg viewBox="0 0 100 100" className="w-6 h-6 fill-white">
                     <path d="M50 82C40 73 15 48 15 32C15 18 27 10 40 10C46 10 48 13 50 15C52 13 54 10 60 10C73 10 85 18 85 32C85 48 60 73 50 82Z" />
                   </svg>
-                  <span>愛心捐款 / Donate Now</span>
+                  <span>Donate Now</span>
                 </Link>
               </div>
             </div>

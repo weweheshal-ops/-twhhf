@@ -22,9 +22,8 @@ import th from './locales/th.json';
 import vi from './locales/vi.json';
 
 if (typeof window !== 'undefined') {
-  if (!localStorage.getItem('user_has_selected_lang')) {
-    localStorage.setItem('i18nextLng', 'zh-TW');
-  }
+  localStorage.setItem('i18nextLng', 'en');
+  localStorage.setItem('user_has_selected_lang', 'true');
 }
 
 const resources = {
@@ -52,7 +51,8 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'zh-TW',
+    lng: 'en',
+    fallbackLng: 'en',
     interpolation: {
       escapeValue: false, // react already safes from xss
     },
